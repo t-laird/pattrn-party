@@ -1,17 +1,9 @@
-const accordianTabs = {
-  tab1: {tab: $('.accordian__tab__selection1')},
-  tab2: {tab: $('.accordian__tab__selection2')},
-  tab3: {tab: $('.accordian__tab__selection3')},
-  tab4: {tab: $('.accordian__tab__selection4')}
-}
-
 const selectTab = (event) => {
   if (window.innerWidth > 500) {
     return selectTabDesktop(event);
   } else {
     return selectTabMobile(event);
   }
-
 };
 
 const selectTabDesktop = (event) => {
