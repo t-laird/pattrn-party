@@ -8,10 +8,86 @@
 </head>
 <body>
   <header>
-    header
+    <h3>PATTRN <span>PARTY</span></h3>
+    <h5>Thomas Laird</h5>
   </header>
   <main>
-    main
+    <section class="accordian">
+      <div class="accordian__header">
+        <h4>ACCORDIAN TABS</h4>
+        <div class="accordian__header__seperator"></div>
+      </div>
+
+      <div class="accordian__box">
+        <div tabNum="1" class="accordian__tab__selection accordian__tab__selection1 active">Tab 1 <div class="accordian__expand__collapse minus" alt="+/-"></div></div>
+        <div tabNum="2" class="accordian__tab__selection accordian__tab__selection2">Tab 2 <div class="accordian__expand__collapse plus" alt="+/-"></div></div>
+        <div tabNum="3" class="accordian__tab__selection accordian__tab__selection3">Tab 3 <div class="accordian__expand__collapse plus" alt="+/-"></div></div>
+        <div tabNum="4" class="accordian__tab__selection accordian__tab__selection4">Tab 4 <div class="accordian__expand__collapse plus" alt="+/-"></div></div>
+        <div class="accordian__box__content accordian__box__content1">
+          <div class="accordian__box__content__placeholderimage">
+          </div>
+          <div class="accordian__box__content__words">
+            <h3>Lorem ipsum dolor sit amet, consectetue.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut lasdfaoreet dolore magna
+              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+              exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+              commodo consequat.
+            </p>
+            <p>
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+              molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+              vero eros et accumsan et iusto odio dignissim qui blandit.
+            </p>
+          </div>
+        </div>
+        <div class="accordian__box__content accordian__box__content2 hidden">
+          <div class="accordian__box__content__placeholderimage"></div>
+          <div class="accordian__box__content__words">
+            <h3>Quisque imperdiet nisi dolor. Praesent, quis. </h3>
+            <p>Maecenas hendrerit sollicitudin massa, ac finibus dolor sodales eu. Aenean dapibus, diam eu scelerisque consectetur, lectus eros ultricies ante, a eleifend libero ex convallis est. In faucibus condimentum leo, sed cursus diam facilisis in. Etiam consequat faucibus mauris a consequat. Phasellus dolor turpis, tempus ac laoreet. 
+            </p>
+            <p>Nullam volutpat bibendum cursus. Vestibulum semper lacinia quam et commodo. Donec a egestas ipsum. Nullam laoreet posuere elit, non venenatis mi eleifend vitae. Proin id nisi ac nunc volutpat egestas sed ac lacus. Vestibulum malesuada tincidunt.
+            </p>
+          </div>
+        </div>
+        <div class="accordian__box__content accordian__box__content3 hidden">
+          <div class="accordian__box__content__placeholderimage"></div>
+          <div class="accordian__box__content__words">
+            <h3>Suspendisse potenti. Aliquam facilisis mattis.</h3>
+            <p>Mauris rutrum elementum augue, malesuada blandit lorem vehicula vitae. Suspendisse at justo pulvinar, cursus dolor ut, euismod eros. Maecenas auctor auctor dui, eget scelerisque mauris sagittis eget. Integer consequat nulla in interdum commodo. Praesent nec nisl vehicula nulla feugiat bibendum vitae eu sem. Mauris non vehicula. 
+            </p>
+            <p>Vestibulum non aliquet quam. Vivamus sed eros sapien. Vestibulum dolor diam, varius et purus vitae, lacinia vestibulum enim. Mauris faucibus mattis elit sed tempus. Sed suscipit aliquet tincidunt. Aliquam facilisis justo in elit accumsan, id condimentum. 
+            </p>
+          </div>
+        </div>
+        <div class="accordian__box__content accordian__box__content4 hidden">
+          <div class="accordian__box__content__placeholderimage"></div>
+          <div class="accordian__box__content__words">
+            <h3>Nullam semper quam vitae enim tristique.</h3>
+            <p>Morbi imperdiet ut lorem quis finibus. Quisque sed elementum tellus. Duis urna mi, dictum tristique urna eget, volutpat eleifend risus. Donec commodo sapien at efficitur tempor. Nulla sit amet justo commodo, accumsan nisi sed, accumsan nunc. Aenean non pellentesque turpis. Mauris a hendrerit magna, a pellentesque. 
+            </p>
+            <p>Fusce posuere eros sapien, sit amet sodales est porttitor quis. Pellentesque pharetra ipsum a quam laoreet, at interdum enim vulputate. Fusce convallis, felis ut auctor gravida, enim ipsum hendrerit eros, quis bibendum felis augue quis dui. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="codeContainer">
+        <ul>
+          <li codeType="html" class="accordian__html selected">HTML</li>
+          <li codeType="css" class="accordian__css">CSS</li>
+          <li codeType="javascript" class="accordian__js">JAVASCRIPT</li>
+        </ul>
+        <script src="https://gist.github.com/t-laird/8c757caad66aa32a1a75b5fb8af30364.js"></script>
+        <script src="https://gist.github.com/t-laird/80e5bf30e73d60a6559ee34fc420ea3b.js"></script>
+        <script src="https://gist.github.com/t-laird/0322bd6516521a396da815f997f61933.js"></script>
+      </div>
+
+      <button class="accordian__button">VIEW CODE</button>
+    </section>
   </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
