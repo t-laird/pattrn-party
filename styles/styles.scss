@@ -58,6 +58,10 @@ header {
   color: white;
   padding: 0px 50px;
   margin-bottom: 25px;
+
+  hr {
+    display: none;
+  }
   
   h3{
     font-size: 20px;
@@ -299,6 +303,30 @@ main {
 }
 
 @media screen and (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+    height: 110px;
+    
+    h3, h5 {
+      width: 100%;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-top: 15px;
+    }
+
+    h5 {
+      margin-bottom: 10px;
+    }
+
+    hr {
+      display: block;
+      width: 80px;
+      border: 1px solid rgba(255, 255, 255, 0.119);
+    }
+  }
   main {  
     padding: 0px 10px;
     .accordian {
