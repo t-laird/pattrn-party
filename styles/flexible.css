@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
+.flexible {
+  margin-bottom: 50px; }
+  .flexible .flexible__header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-bottom: 50px; }
+    .flexible .flexible__header h4 {
+      padding-right: 40px; }
+    .flexible .flexible__header .flexible__header__seperator {
+      border-bottom: 1px solid #d1d2d3; }
+  .flexible .flexible__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-gap: 15px; }
+    .flexible .flexible__cards .flexible__card {
+      border: 1px solid #d1d2d3;
+      border-top: none;
+      display: grid;
+      overflow: hidden;
+      grid-template-rows: 50px 200px; }
+      .flexible .flexible__cards .flexible__card.span2 {
+        grid-column: span 2; }
+      .flexible .flexible__cards .flexible__card .flexible__card__header {
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        font-weight: 600;
+        box-sizing: border-box;
+        border-top: 1px solid #d1d2d3;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .flexible .flexible__cards .flexible__card .accordian__box__content__placeholderimage {
+        background-image: url("../placeholder-image.svg");
+        transition: 1s;
+        background-size: 100% 100%;
+        height: 100%; }
+
+@media screen and (max-width: 800px) {
+  .flexible .flexible__cards {
+    grid-template-columns: repeat(2, 50%); }
+    .flexible .flexible__cards .flexible__card.span2 {
+      order: -1; } }
+
+@media screen and (max-width: 500px) {
+  .flexible .flexible__cards {
+    grid-template-columns: 1fr; }
+    .flexible .flexible__cards .flexible__card.span2 {
+      grid-column: span 1;
+      order: 0; } }

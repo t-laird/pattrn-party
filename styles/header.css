@@ -1,0 +1,81 @@
+.header .header__header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-bottom: 50px; }
+  .header .header__header h4 {
+    padding-right: 40px; }
+  .header .header__header .header__header__seperator {
+    border-bottom: 1px solid #d1d2d3; }
+
+.header nav {
+  background: #d1d2d3;
+  display: grid;
+  grid-template-columns: 80px 1fr 200px;
+  grid-template-rows: 100px;
+  grid-gap: 30px;
+  align-content: center;
+  align-items: center; }
+  .header nav .header__main {
+    padding: 15px 0px 15px 20px; }
+    .header nav .header__main img {
+      width: 100%; }
+    .header nav .header__main h3 {
+      display: none; }
+  .header nav .header__nav__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .header nav .header__nav__links div {
+      cursor: pointer;
+      text-align: center; }
+  .header nav .header__nav__search {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-gap: 10px;
+    background: #f2f2f2;
+    align-items: center;
+    padding: 0px 5px;
+    border: 1px solid darkgrey;
+    margin-right: 20px; }
+    .header nav .header__nav__search input {
+      width: 100%;
+      height: 40px;
+      border: none;
+      background: none;
+      font-size: 18px;
+      font-weight: 100; }
+
+@media screen and (max-width: 850px) {
+  .header nav .header__nav__links div {
+    font-size: 12px; } }
+
+@media screen and (max-width: 750px) {
+  .header.closed nav .header__nav__links {
+    display: none; }
+  .header.closed nav .header__nav__search {
+    display: none; }
+  .header nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+    .header nav .header__main {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      align-items: center;
+      cursor: pointer;
+      background: #b7b9ba; }
+      .header nav .header__main img {
+        width: 70px; }
+      .header nav .header__main h3 {
+        display: inline;
+        margin-right: 20px;
+        color: #464646; }
+    .header nav .header__nav__links {
+      grid-template-columns: 1fr;
+      grid-gap: 40px; }
+      .header nav .header__nav__links div {
+        font-size: 20px;
+        padding-left: 30px;
+        text-align: left; }
+    .header nav .header__nav__search {
+      margin: 0px 10px 6px; } }
