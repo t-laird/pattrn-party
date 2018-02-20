@@ -54,17 +54,30 @@ const showHideCode = (event) => {
 
 const changeCode = (event) => {
   const codeTarget = $(event.target).attr('codeType');
+  const sectionTarget = $(event.target).attr('section');
   const codeGists = {
-    html: '#gist86413720', 
-    css: '#gist86414015', 
-    javascript: '#gist86414030'
+    accordian: {
+      html: '#gist86413720', 
+      css: '#gist86414015', 
+      javascript: '#gist86414030'
+    }, 
+    flexible: {
+      html: '#gist86771182', 
+      css: '#gist86771224', 
+      javascript: '#gist86771271'
+    },
+    header: {
+      html: '#gist86413720', 
+      css: '#gist86414015', 
+      javascript: '#gist86414030'
+    }
   };
 
-  $('.codeContainer li').removeClass('selected');
+  $(event.target).closest('.codeContainer').find('li').removeClass('selected');
   $(event.target).addClass('selected');
+  $(event.target).closest('.codeContainer').find('.gist').hide();
 
-  $('.gist').hide();
-  $(codeGists[codeTarget]).show();
+  $(codeGists[sectionTarget][codeTarget]).show();
 };
 
 $('.accordian__tab__selection').on('click', selectTab);
