@@ -67,9 +67,9 @@ const changeCode = (event) => {
       javascript: '#gist86771271'
     },
     header: {
-      html: '#gist86413720', 
-      css: '#gist86414015', 
-      javascript: '#gist86414030'
+      html: '#gist87190012', 
+      css: '#gist87190055', 
+      javascript: '#gist87190082'
     }
   };
 
@@ -80,6 +80,11 @@ const changeCode = (event) => {
   $(codeGists[sectionTarget][codeTarget]).show();
 };
 
+const openHeader = () => {
+  $('.header').toggleClass('closed');
+};
+
 $('.accordian__tab__selection').on('click', selectTab);
 $('.accordian__button').on('click', showHideCode);
 $('.codeContainer li').on('click', changeCode);
+$('.header__main').on('click', openHeader);
